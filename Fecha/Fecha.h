@@ -11,8 +11,7 @@ public:
     void setDia(int dia);
     void setMes(int mes);
     void setAnio(int anio);
-    void agregarDia();
-    void restarDia();
+    void agregarDias(int dias);
     std::string toString();
 
 private:
@@ -24,5 +23,6 @@ private:
     bool esValidoDia(int dia, int mes);
     bool esValidoMes(int mes);
     void setFechaDefault();
-
+    void agregarDia();
+    void restarDia();
 };

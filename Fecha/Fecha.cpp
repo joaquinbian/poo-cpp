@@ -118,6 +118,20 @@ void Fecha::restarDia(){
 }
 
 
+void Fecha::agregarDias(int dias){
+    if(dias == 0) return;
+    if(dias > 0) {
+        for(int i = 0; i < dias; i++){
+            this->agregarDia();
+        }
+    } else {
+        for(int i = 0; i < dias; i++){
+            this->restarDia();
+        }
+    }
+}
+
+
 std::string Fecha::toString(){
     return std::to_string(this->_dia) + "/" + std::to_string(this->_mes) + "/" + std::to_string(this->_anio);
 }
