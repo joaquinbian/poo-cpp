@@ -31,11 +31,12 @@ int Fecha::getAnio(){
 
 //setters
 void Fecha::setDia(int dia){
+
     if(this->esValidoDia(dia, this->_mes)){
         this->_dia = dia;
     } else {
         this->_dia = 1;
-        std::cout << "El dia no es valido";
+        std::cout << "El dia no es valido" << std::endl;
     }
 }
 
@@ -44,7 +45,7 @@ void Fecha::setMes(int mes){
         this->_mes = mes;
     } else {
         this->_mes = 1;
-        std::cout << "El mes no es valido";
+        std::cout << "El mes no es valido" << std::endl;
     }
 }
 
@@ -53,7 +54,7 @@ void Fecha::setAnio(int anio){
         this->_anio = anio;
     } else {
         this->_anio = anio;
-        std::cout << "El anio no es valido";
+        std::cout << "El anio no es valido" << std::endl;
     }
 }
 
@@ -111,7 +112,8 @@ void Fecha::restarDia(){
         }else {
             this->setMes(this->_mes - 1);
         }
-        this->setDia(this->_meses[this->_mes]);
+
+        this->setDia(this->_meses[this->_mes - 1]);
     } else {
         this->setDia(this->_dia - 1);
     }
@@ -125,7 +127,7 @@ void Fecha::agregarDias(int dias){
             this->agregarDia();
         }
     } else {
-        for(int i = 0; i < dias; i++){
+        for(int i = 0; i > dias; i--){
             this->restarDia();
         }
     }
