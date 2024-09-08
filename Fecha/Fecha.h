@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 
 class Fecha {
 public:
@@ -10,6 +11,9 @@ public:
     void setDia(int dia);
     void setMes(int mes);
     void setAnio(int anio);
+    void agregarDia();
+    void restarDia();
+    std::string toString();
 
 private:
     int _dia;
@@ -20,6 +24,5 @@ private:
     bool esValidoDia(int dia, int mes);
     bool esValidoMes(int mes);
     void setFechaDefault();
-    void agregarDia();
-    void restarDia();
+
 };

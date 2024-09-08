@@ -116,3 +116,8 @@ void Fecha::restarDia(){
         this->setDia(this->_dia - 1);
     }
 }
+
+
+std::string Fecha::toString(){
+    return std::to_string(this->_dia) + "/" + std::to_string(this->_mes) + "/" + std::to_string(this->_anio);
+}
