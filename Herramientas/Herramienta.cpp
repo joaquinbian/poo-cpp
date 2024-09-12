@@ -3,31 +3,31 @@
 Herramienta::Herramienta(float peso, float longitud){
     this->setPeso(peso);
     this->setLongitud(longitud);
-    this->nombre = "";
+    this->_nombre = "";
     
 }
 
 
 void Herramienta::setPeso(float peso){
     if(peso > 0){
-        this->peso = peso;
+        this->_peso = peso;
     }
 }
 
 void Herramienta::setLongitud(float longitud){
     if(longitud > 0){
-        this->longitud = longitud;
+        this->_longitud = longitud;
     }
 }
 
 float Herramienta::getPeso(){
-    return this->peso;
+    return this->_peso;
 }
 
 float Herramienta::getLongitud(){
-    return this->longitud;
+    return this->_longitud;
 }
 
 void Herramienta::mostrarInformacion(){
-
+    std::cout << "soy un " << this->_nombre << " de " << this->_peso << "kg y " << this->_longitud << "cm" << std::endl;
 }

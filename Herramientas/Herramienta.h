@@ -10,9 +10,9 @@ class Herramienta {
         void mostrarInformacion();
 
     protected:
-        std::string nombre;
-        float peso;
-        float longitud;
+        std::string _nombre;
+        float _peso;
+        float _longitud;
         
 
 };

@@ -8,5 +8,5 @@ class Taladro : protected Herramienta {
         float getPotencia();
         void mostrarInformacion();
     private:
-        float potencia;
+        float _potencia;
 };
