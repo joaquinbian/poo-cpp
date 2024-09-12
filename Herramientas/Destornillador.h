@@ -1,12 +1,12 @@
 #pragma once
 #include "Herramienta.h"
-
+#include <iostream>
 class Destornillador : protected Herramienta {
     public:
-        Destornillador(float peso, float longitud, char *tipoPunta);
+        Destornillador(float peso, float longitud, std::string tipoPunta);
         void setTipoPunta(char *tipoPunta);
-        char *getTipoPunta();
+        std::string getTipoPunta();
         void mostrarInformacion();
     private:
-        char *tipoPunta[20];
+        std::string tipoPunta[20];
 };
