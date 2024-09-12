@@ -9,7 +9,7 @@ class Herramienta {
         float getLongitud();
         void mostrarInformacion();
 
-    protected:
+    private:
         std::string _nombre;
         float _peso;
         float _longitud;
