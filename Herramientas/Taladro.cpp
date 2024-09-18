@@ -1,9 +1,10 @@
 #include "Taladro.h"
 #include <string>
+#include <cstring>
 
 Taladro::Taladro(float peso, float longitud, float potencia):Herramienta(peso, longitud){
     this->setPotencia(potencia);
-    this->_nombre = "Taladro";
+    strcpy(this->_nombre, "Taladro");
 }
 
 

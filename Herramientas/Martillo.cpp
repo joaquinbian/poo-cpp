@@ -1,13 +1,15 @@
 #include "Martillo.h"
 #include <iostream>
+#include <cstring>
 
 Martillo::Martillo(float peso, float longitud, std::string tipoCabeza):Herramienta(peso, longitud){
     this->setTipoCabeza(tipoCabeza);
-    this->_nombre = "Martillo";
+    strcpy(this->_nombre, "Martillo");
 }
 
 void Martillo::setTipoCabeza(std::string tipoCabeza){
-    this->_tipoCabeza = tipoCabeza;
+    strcpy(this->_tipoCabeza, tipoCabeza.c_str()); //convertimos el string a char
+
 }
 
 std::string Martillo::getTipoCabeza(){

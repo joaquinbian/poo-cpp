@@ -1,5 +1,4 @@
 #pragma once
-#include <iostream>
 class Herramienta {
     public:
         Herramienta(float peso, float longitud);
@@ -9,8 +8,8 @@ class Herramienta {
         float getLongitud();
         void mostrarInformacion();
 
-    private:
-        std::string _nombre;
+    protected:
+        char _nombre[50];
         float _peso;
         float _longitud;
         

@@ -7,6 +7,6 @@ class Martillo:protected Herramienta {
         void setTipoCabeza(std::string tipoCabeza);
         std::string getTipoCabeza();
         void mostrarInformacion();
-    private:
-        std::string _tipoCabeza;
+    protected:
+        char _tipoCabeza[50];
 };

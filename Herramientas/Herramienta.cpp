@@ -1,9 +1,11 @@
 #include "Herramienta.h"
+#include <cstring>
+#include <iostream>
 
 Herramienta::Herramienta(float peso, float longitud){
     this->setPeso(peso);
     this->setLongitud(longitud);
-    this->_nombre = "";
+    strcpy(this->_nombre, "");
     
 }
 
@@ -29,5 +31,5 @@ float Herramienta::getLongitud(){
 }
 
 void Herramienta::mostrarInformacion(){
-    std::cout << "soy un " << this->_nombre << " de " << this->_peso << "kg y " << this->_longitud << "cm" << std::endl;
+    std::cout << "soy un " << this->_nombre << " de " << this->_peso << "kg y " << this->_longitud << "cm ";
 }

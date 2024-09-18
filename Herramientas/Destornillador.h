@@ -8,5 +8,5 @@ class Destornillador : protected Herramienta {
         std::string getTipoPunta();
         void mostrarInformacion();
     private:
-        std::string _tipoPunta;
+        char _tipoPunta[50];
 };
