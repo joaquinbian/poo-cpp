@@ -18,7 +18,7 @@ std::string Martillo::getTipoCabeza(){
 
 
 void Martillo::mostrarInformacion(){
-    this->mostrarInformacion();
+    Herramienta::mostrarInformacion();
 
     std::cout << "y el tipo de cabeza es " << this->_tipoCabeza << std::endl;
 }
