@@ -20,6 +20,6 @@ std::string Destornillador::getTipoPunta(){
 }
 
 void Destornillador::mostrarInformacion(){
-    this->mostrarInformacion();
+    Herramienta::mostrarInformacion();
     std::cout << "y el tipo de punta es " << this->_tipoPunta << std::endl;
 }
