@@ -1,5 +1,5 @@
 #include "Taladro.h"
-#include <iostream>
+#include <string>
 
 Taladro::Taladro(float peso, float longitud, float potencia):Herramienta(peso, longitud){
     this->setPotencia(potencia);
@@ -15,4 +15,5 @@ void Taladro::setPotencia(float potencia){
 
 float Taladro::getPotencia(){
     return this->_potencia;
+    
 }

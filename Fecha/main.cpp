@@ -2,6 +2,8 @@
 #include "Fecha.h"
 
 
+
+//REPASAR CLASE DEL 29-08 PARA VER ALGUNAS COSAS
 int main(){
 
     Fecha fecha = Fecha(31,12,2024);
