@@ -15,3 +15,10 @@ void Martillo::setTipoCabeza(std::string tipoCabeza){
 std::string Martillo::getTipoCabeza(){
     return this->_tipoCabeza;
 }
+
+
+void Martillo::mostrarInformacion(){
+    this->mostrarInformacion();
+
+    std::cout << "y el tipo de cabeza es " << this->_tipoCabeza << std::endl;
+}
