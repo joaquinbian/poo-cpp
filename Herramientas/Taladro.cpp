@@ -22,5 +22,5 @@ float Taladro::getPotencia(){
 
 void Taladro::mostrarInformacion() {
     Herramienta::mostrarInformacion();
-    std::cout << "Y la potencia de este Taladro es " << this->_potencia << " watts " << std::endl;
+    std::cout << "Y la potencia de este " << this->_nombre <<  " es de " << this->_potencia << " watts ";
 }
