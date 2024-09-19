@@ -1,6 +1,6 @@
 #pragma once
 #include "Construccion.h"
-class ConstruccionHabitable : protected Construccion {
+class Casa : protected Construccion {
 
     public:
         float getSuperficieCubiertaM2();
