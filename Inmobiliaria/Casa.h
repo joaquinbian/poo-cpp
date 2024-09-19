@@ -6,8 +6,8 @@ class Casa : protected Construccion {
         float getSuperficieCubiertaM2();
         int getHabitaciones();
 
-        void setSuperficieCubiertaM2();
-        void setHabitaciones();
+        void setSuperficieCubiertaM2(float);
+        void setHabitaciones(int);
     protected:
         float _superficieCubiertaM2;
         int _habitaciones;
