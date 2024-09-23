@@ -3,7 +3,8 @@
 #include <iostream>
 
 Construccion::Construccion(int codigo, std::string calle, std::string numero, std::string localidad, std::string nombreDueno, std::string apellidoDueno, std::string DNI, std::string celular, float precioVenta, float precioAlquiler, int antiguedadConstruccion, float superficieTotalM2):Inmueble(codigo, calle, numero, localidad, nombreDueno, apellidoDueno, DNI, celular, precioVenta, precioAlquiler){
-
+    this->setAntiguedadConstruccion(antiguedadConstruccion);
+    this->setSuperficieTotalM2(superficieTotalM2);
 
 };
 
