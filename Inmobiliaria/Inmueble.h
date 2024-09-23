@@ -2,6 +2,7 @@
 #include <string>
 class Inmueble {
     public:
+        Inmueble(int codigo, std::string calle, std::string numero, std::string localidad, std::string nombreDueno, std::string apellidoDueno, std::string DNI, std::string celular, float precioVenta, float precioAlquiler);
         int getCodigoInmueble();
         float getPrecioVenta();
         float getPrecioAlquiler();
